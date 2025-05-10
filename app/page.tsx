@@ -118,7 +118,7 @@ export default function SocialProfilePage() {
               <Github className="mr-1 h-3 w-3" />
               github.com/alaaja8899
             </Link>
-            <Link href="https://wa.me/+255611430930" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
+            <Link href="https://wa.me/+252611430930" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
               <MessageCircle className="mr-1 h-3 w-3" />
               Chat on WhatsApp
             </Link>
