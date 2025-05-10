@@ -88,16 +88,16 @@ export default function SocialProfilePage() {
           {/* Stats */}
           <div className="flex gap-6 mt-6">
             <div className="text-center">
-              <div className="font-bold">1.2k</div>
-              <div className="text-xs text-muted-foreground">Connections</div>
+              <div className="font-bold">179</div>
+              <div className="text-xs text-muted-foreground">Repositories</div>
             </div>
             <div className="text-center">
-              <div className="font-bold">483</div>
-              <div className="text-xs text-muted-foreground">Following</div>
+              <div className="font-bold">8,230</div>
+              <div className="text-xs text-muted-foreground">Contributions</div>
             </div>
             <div className="text-center">
-              <div className="font-bold">42</div>
-              <div className="text-xs text-muted-foreground">Projects</div>
+              <div className="font-bold">51</div>
+              <div className="text-xs text-muted-foreground">Followers</div>
             </div>
           </div>
 
