@@ -77,7 +77,7 @@ export default function SocialProfilePage() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-2xl font-bold">Abdirizak Abdullahi (Alaja)</h1>
-              <p className="text-muted-foreground">CTO & Software Engineer 🖥 💻</p>
+              <p className="text-muted-foreground">Software Engineer 🖥 💻</p>
               <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
                 <span>📍 Mogadishu , Somalia </span>
@@ -104,7 +104,7 @@ export default function SocialProfilePage() {
           {/* Bio */}
           <div className="mt-6">
             <p className="text-sm">
-              CTO & Software Engineer with expertise in developing web applications, IoT solutions, 2D games, and AI wrappers. Passionate about solving real-world problems through Modern  technology.
+               Expertise in developing web applications, IoT solutions, 2D games, and AI wrappers. Passionate about solving real-world problems through Modern  technology.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ This project is a simple implementation of the Space Invaders arcade game using 
                   title: "Echopal - Audio streaming",
                   description:
                     "An analytics dashboard for social media managers with content scheduling, performance metrics, and audience insights.",
-                  tags: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
+                  tags: ["React.js", "Firebase", "TailwindCss", "Agora"],
                   image: "/echopal.webp",
                   stars: 92,
                   forks: 18,
