@@ -110,9 +110,9 @@ export default function SocialProfilePage() {
 
           {/* Quick Links */}
           <div className="flex flex-wrap gap-3 mt-4">
-            <Link href="#" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
+            <Link href="/" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
               <LinkIcon className="mr-1 h-3 w-3" />
-              johndoe.dev
+              alaja.dev
             </Link>
             <Link href="https://github.com/alaaja8899" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
               <Github className="mr-1 h-3 w-3" />
