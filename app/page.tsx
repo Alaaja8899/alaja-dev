@@ -14,6 +14,24 @@ import {
   Calendar,
   LinkIcon,
   Users,
+  Calendar1,
+  CalendarClock,
+  Code,
+  Code2,
+  Atom,
+  Layers,
+  Server,
+  ServerCrash,
+  Leaf,
+  Database,
+  GitGraph,
+  Cloud,
+  Box,
+  GitBranch,
+  Wind,
+  Repeat,
+  TestTube,
+  PenTool,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -88,23 +106,23 @@ export default function SocialProfilePage() {
           {/* Stats */}
           <div className="flex gap-6 mt-6">
             <div className="text-center">
-              <div className="font-bold">179</div>
+              <div className="font-bold">100+</div>
               <div className="text-xs text-muted-foreground">Repositories</div>
             </div>
             <div className="text-center">
-              <div className="font-bold">8,230</div>
+              <div className="font-bold">8k+</div>
               <div className="text-xs text-muted-foreground">Contributions</div>
             </div>
             <div className="text-center">
-              <div className="font-bold">51</div>
-              <div className="text-xs text-muted-foreground">Followers</div>
+              <div className="font-bold">50+</div>
+              <div className="text-xs text-muted-foreground">Projects</div>
             </div>
           </div>
 
           {/* Bio */}
           <div className="mt-6">
             <p className="text-sm">
-               Expertise in developing web applications, IoT solutions, 2D games, and AI wrappers. Passionate about solving real-world problems through Modern  technology.
+              Expertise in developing web applications, IoT solutions, 2D games, and AI wrappers. Passionate about solving real-world problems through Modern technology.
             </p>
           </div>
 
@@ -209,8 +227,7 @@ export default function SocialProfilePage() {
                     "A web application for renting Danab power bank stations, featuring real-time availability, rental tracking, and secure payment integration.",
                   tags: ["Next.js", "TailwindCss","Redux", "ShadCn", "WaafiPay"],
                   image: "/danab.webp",
-                  stars: 142,
-                  forks: 36,
+                  date:  "Nov 16, 2024",
                   link:"https://dn-frontend-gamma.vercel.app/"
                   },
                   {
@@ -219,8 +236,7 @@ export default function SocialProfilePage() {
                     "A website that transforms image images into cartoon like styles or professional photo pose shot .",
                   tags: ["Next.js", "Convex", "Tailwind CSS", "Redux","WaafiPay"],
                   image: "/alajart.webp",
-                  stars: 87,
-                  forks: 21,
+                  date: "Apr 29, 2025",
                   link:"https://alaj-art.vercel.app/"
                   },
                   {
@@ -234,18 +250,15 @@ This project is a simple implementation of the Space Invaders arcade game using 
                   `,
                   tags: ["Python", "Pygame", "SPrite", "SV-8 engine"],
                   image: "/space.webp",
-                  stars: 156,
-                  forks: 45,
+                  date: "Jul 4, 2022",
                   link:"https://github.com/Alaaja8899/space-invaders"
                   },
                   {
                   title: "Echopal - Audio streaming",
-                  description:
-                    "An analytics dashboard for social media managers with content scheduling, performance metrics, and audience insights.",
+                  description: "Echopal is Open source project a live audio streaming web application where users can create and join various rooms to chat with friends or meet new people. It helps communities discuss their interests, whether it's anime (for otaku people), for developers , for family & freind or classmates discussion", 
                   tags: ["React.js", "Firebase", "TailwindCss", "Agora"],
                   image: "/echopal.webp",
-                  stars: 92,
-                  forks: 18,
+                  date: "Jul 26, 2024",
                   link:"https://echopal.vercel.app/"
 
                   },
@@ -272,12 +285,8 @@ This project is a simple implementation of the Space Invaders arcade game using 
                     <div className="flex items-center justify-between text-sm text-muted-foreground">
                     <div className="flex items-center gap-4">
                       <span className="flex items-center gap-1">
-                      <Heart className="h-4 w-4" />
-                      {project.stars}
-                      </span>
-                      <span className="flex items-center gap-1">
-                      <Share2 className="h-4 w-4" />
-                      {project.forks}
+                      <CalendarClock className="h-4 w-4" />
+                      First Commit :  {project.date}
                       </span>
                     </div>
                     <Button variant="outline" size="sm" className="gap-1">
@@ -296,99 +305,101 @@ This project is a simple implementation of the Space Invaders arcade game using 
             {/* Skills Tab */}
             <TabsContent value="skills" className="mt-6">
               <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-bold mb-4">Technical Skills</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {[
-                      { name: "C++", level: "Expert", endorsements: 92 },
-                      { name: "JavaScript", level: "Expert", endorsements: 78 },
-                      { name: "TypeScript", level: "Advanced", endorsements: 64 },
-                      { name: "React", level: "Expert", endorsements: 92 },
-                      { name: "Next.js", level: "Advanced", endorsements: 56 },
-                      { name: "Node.js", level: "Advanced", endorsements: 71 },
-                      { name: "Express", level: "Intermediate", endorsements: 48 },
-                      { name: "MongoDB", level: "Advanced", endorsements: 52 },
-                      { name: "PostgreSQL", level: "Intermediate", endorsements: 39 },
-                      { name: "GraphQL", level: "Intermediate", endorsements: 43 },
-                      { name: "AWS", level: "Intermediate", endorsements: 37 },
-                      { name: "Docker", level: "Intermediate", endorsements: 41 },
-                      { name: "Git", level: "Advanced", endorsements: 68 },
-                      { name: "Tailwind CSS", level: "Advanced", endorsements: 59 },
-                      { name: "Redux", level: "Advanced", endorsements: 47 },
-                      { name: "Jest", level: "Intermediate", endorsements: 38 },
-                      { name: "Figma", level: "Intermediate", endorsements: 32 },
-                    ].map((skill, index) => (
-                      <div key={index} className="border rounded-lg p-3 hover:border-primary transition-colors">
-                        <div className="font-medium">{skill.name}</div>
-                        <div className="flex items-center justify-between mt-1">
-                          <span className="text-xs text-muted-foreground">{skill.level}</span>
-                          <span className="text-xs flex items-center gap-1">
-                            <Users className="h-3 w-3" />
-                            {skill.endorsements}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
+              <CardContent className="p-6">
+              <h3 className="font-bold mb-4">Technical Skills</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { name: "C++", level: "Expert", icon: <Code className="text-blue-500 h-5 w-5" />, description: "Proficient in developing high-performance applications, including IoT and embedded systems." },
+                { name: "JavaScript", level: "Expert", icon: <Code2 className="text-yellow-500 h-5 w-5" />, description: "Skilled in building dynamic and interactive web applications." },
+                { name: "TypeScript", level: "Advanced", icon: <Code className="text-blue-600 h-5 w-5" />, description: "Experienced in creating scalable and type-safe applications." },
+                { name: "React", level: "Expert", icon: <Atom className="text-cyan-500 h-5 w-5" />, description: "Expert in building reusable components and managing state effectively." },
+                { name: "Next.js", level: "Advanced", icon: <Layers className="text-gray-800 h-5 w-5" />, description: "Proficient in server-side rendering and building SEO-friendly web apps." },
+                { name: "Node.js", level: "Advanced", icon: <Server className="text-green-500 h-5 w-5" />, description: "Experienced in building scalable backend services and APIs." },
+                { name: "Express", level: "Intermediate", icon: <ServerCrash className="text-gray-500 h-5 w-5" />, description: "Capable of creating RESTful APIs and middleware for web applications." },
+                { name: "MongoDB", level: "Advanced", icon: <Leaf className="text-green-600 h-5 w-5" />, description: "Skilled in designing and managing NoSQL databases for high-performance applications." },
+                { name: "PostgreSQL", level: "Intermediate", icon: <Database className="text-blue-700 h-5 w-5" />, description: "Experienced in relational database design and query optimization." },
+                { name: "GraphQL", level: "Intermediate", icon: <GitGraph className="text-pink-500 h-5 w-5" />, description: "Proficient in building flexible and efficient APIs for modern applications." },
+                { name: "AWS", level: "Intermediate", icon: <Cloud className="text-orange-500 h-5 w-5" />, description: "Experienced in deploying and managing cloud-based applications." },
+                { name: "Docker", level: "Intermediate", icon: <Box className="text-blue-400 h-5 w-5" />, description: "Skilled in containerizing applications for consistent and scalable deployments." },
+                { name: "Git", level: "Advanced", icon: <GitBranch className="text-red-500 h-5 w-5" />, description: "Proficient in version control and collaborative development workflows." },
+                { name: "Tailwind CSS", level: "Advanced", icon: <Wind className="text-teal-500 h-5 w-5" />, description: "Expert in creating responsive and modern UI designs efficiently." },
+                { name: "Redux", level: "Advanced", icon: <Repeat className="text-purple-500 h-5 w-5" />, description: "Experienced in managing complex application state effectively." },
+                { name: "Jest", level: "Intermediate", icon: <TestTube className="text-red-400 h-5 w-5" />, description: "Capable of writing unit and integration tests for robust applications." },
+                { name: "Figma", level: "Intermediate", icon: <PenTool className="text-pink-400 h-5 w-5" />, description: "Skilled in designing user interfaces and collaborating with design teams." },
+              ].map((skill, index) => (
+                <div key={index} className="border rounded-lg p-3 hover:border-primary transition-colors flex items-center gap-3">
+                <div>
+                <div className="top flex items-center gap-1">
+                  {skill.icon}
+                  <div className="main">
+                  <div className="font-medium">{skill.name}</div>
+                  <span className="text-xs text-muted-foreground">{skill.level}</span>
                   </div>
-                </CardContent>
+                </div>
+                <p className="desc text-sm text-muted-foreground mt-2">{skill.description}</p>
+                </div>
+                </div>
+              ))}
+              </div>
+              </CardContent>
               </Card>
 
               <Card className="mt-6">
-                <CardContent className="p-6">
-                  <h3 className="font-bold mb-4">Certifications</h3>
-                  <div className="space-y-4">
-                    {[
-                      {
-                      name: "AWS Certified Solutions Architect – Associate",
-                      issuer: "Amazon Web Services",
-                      date: "Dec-2024",
-                      logo: "https://www.inovex.de/wp-content/uploads/Amazon_Web_Services_Logo-kl.png",
-                      },
-                      {
-                      name: "Meta Certified Front-End Developer",
-                      issuer: "Meta Platforms, Inc.",
-                      date: "2024-jul",
-                      logo: "https://ztd-euwest2-prod-s3.s3.eu-west-2.amazonaws.com/Meta_63e391ad39.png",
-                      },
-                      {
-                      name: "MongoDB Certified Developer Associate",
-                      issuer: "MongoDB University",
-                      date: "2024",
-                      logo: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-instructor-photos.s3.amazonaws.com/b9/9b3af01d614d18a4d39471abb25b55/Google-Play-Store-Banner_1920x960px.jpg?auto=format%2Ccompress&dpr=1&w=200&h=200",
-                      },
-                      {
-                      name: "Google Cloud Professional Data Engineer",
-                      issuer: "Google Cloud",
-                      date: "2024",
-                      logo: "https://avatars.githubusercontent.com/u/2810941?s=200&v=4",
-                      },
-                      {
-                      name: "Certified Kubernetes Administrator (CKA)",
-                      issuer: "Cloud Native Computing Foundation",
-                      date: "2025",
-                      logo: "https://avatars.githubusercontent.com/u/13455738?s=280&v=4",
-                      },
-                    ].map((cert, index) => (
-                      <div key={index} className="flex items-center gap-3">
-                        <div className="h-10 w-10 rounded-md overflow-hidden flex-shrink-0">
-                          <Image
-                            src={cert.logo || "/placeholder.svg"}
-                            alt={cert.issuer}
-                            width={40}
-                            height={40}
-                            className="object-cover"
-                          />
-                        </div>
-                        <div>
-                          <div className="font-medium">{cert.name}</div>
-                          <div className="text-xs text-muted-foreground">
-                            {cert.issuer} • {cert.date}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
+              <CardContent className="p-6">
+              <h3 className="font-bold mb-4">Certifications</h3>
+              <div className="space-y-4">
+              {[
+                {
+                name: "AWS Certified Solutions Architect – Associate",
+                issuer: "Amazon Web Services",
+                date: "Dec-2024",
+                logo: "https://www.inovex.de/wp-content/uploads/Amazon_Web_Services_Logo-kl.png",
+                },
+                {
+                name: "Meta Certified Front-End Developer",
+                issuer: "Meta Platforms, Inc.",
+                date: "2024-jul",
+                logo: "https://ztd-euwest2-prod-s3.s3.eu-west-2.amazonaws.com/Meta_63e391ad39.png",
+                },
+                {
+                name: "MongoDB Certified Developer Associate",
+                issuer: "MongoDB University",
+                date: "2024",
+                logo: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-instructor-photos.s3.amazonaws.com/b9/9b3af01d614d18a4d39471abb25b55/Google-Play-Store-Banner_1920x960px.jpg?auto=format%2Ccompress&dpr=1&w=200&h=200",
+                },
+                {
+                name: "Google Cloud Professional Data Engineer",
+                issuer: "Google Cloud",
+                date: "2024",
+                logo: "https://avatars.githubusercontent.com/u/2810941?s=200&v=4",
+                },
+                {
+                name: "Certified Kubernetes Administrator (CKA)",
+                issuer: "Cloud Native Computing Foundation",
+                date: "2025",
+                logo: "https://avatars.githubusercontent.com/u/13455738?s=280&v=4",
+                },
+              ].map((cert, index) => (
+                <div key={index} className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-md overflow-hidden flex-shrink-0">
+                <Image
+                src={cert.logo || "/placeholder.svg"}
+                alt={cert.issuer}
+                width={40}
+                height={40}
+                className="object-cover"
+                />
+                </div>
+                <div>
+                <div className="font-medium">{cert.name}</div>
+                <div className="text-xs text-muted-foreground">
+                {cert.issuer} • {cert.date}
+                </div>
+                </div>
+                </div>
+              ))}
+              </div>
+              </CardContent>
               </Card>
             </TabsContent>
           </Tabs>
