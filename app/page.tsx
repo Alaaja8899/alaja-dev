@@ -163,7 +163,7 @@ export default function SocialProfilePage() {
                   {
                   role: "CTO & Software Engineer",
                   company: "Danab Power Bank Station",
-                  logo: "https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-6/454841714_1592046118022447_5398994410779920657_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=keiMyi8AZIcQ7kNvwFG9Lgl&_nc_oc=AdkYV0oTdC52kgV8Eq9-GPzF4h2zr4HHJPxImiij4046BasywQE2nvANHen3p1WDHkY&_nc_zt=23&_nc_ht=scontent.fmgq1-2.fna&_nc_gid=-T8GhtzvAMTfrwXrCn24iA&oh=00_AfId17JtXABLTKxaZDkfMXFhd6wWAwe4mQSkm5GJjfRi7A&oe=68253BFB",
+                  logo: "/danab-1.webp",
                   period: "2024 - Present",
                   location: "Mogadishu, Somalia",
                   description:
@@ -172,7 +172,7 @@ export default function SocialProfilePage() {
                   {
                   role: "Part-Time Developer",
                   company: "Shape Ads",
-                  logo: "https://scontent.fmgq1-2.fna.fbcdn.net/v/t39.30808-6/464083203_122136467870365237_6836548571956583124_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=48Xw1T0SSH4Q7kNvwFuWI27&_nc_oc=AdmT15CFb29lM4npcnHmm4P0VDVS84Tpgqgw4aFulAUuoGTmfD4qAnAhP1l8sYKYcm8&_nc_zt=23&_nc_ht=scontent.fmgq1-2.fna&_nc_gid=eB6bwd9u56CmTphwiwI74w&oh=00_AfKwtVfrxKvtUrKt2z529tdEiz34WS6Yzrq0IIiIP0VaMQ&oe=682553DE",
+                  logo: "/shapeads.webp",
                   period: "2025 - Present",
                   location: "Mogadishu, Somalia",
                   description:
@@ -181,7 +181,7 @@ export default function SocialProfilePage() {
                   {
                   role: "Former - Software Engineer",
                   company: "TAHQIIQ Solutions Inc.",
-                  logo: "https://tahqiiq.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftahqiqbg.ffe25413.png&w=64&q=75",
+                  logo: "/tahqiq.webp",
                   period: "2024-aug - 2025-apr",
                   location: "Mogadishu, Somalia",
                   description:
