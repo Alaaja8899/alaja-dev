@@ -48,7 +48,7 @@ export default function SocialProfilePage() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
         <div className="container flex h-14 items-center justify-between">
           <Link href="/" className="font-bold text-xl">
-            Alaaja.Dev
+            Abdirizak (alaaja)
           </Link>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="sm" className="hidden md:flex">
@@ -130,7 +130,7 @@ export default function SocialProfilePage() {
           <div className="flex flex-wrap gap-3 mt-4">
             <Link href="/" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
               <LinkIcon className="mr-1 h-3 w-3" />
-              alaja.dev
+              #
             </Link>
             <Link href="https://github.com/alaaja8899" className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground">
               <Github className="mr-1 h-3 w-3" />
@@ -160,6 +160,15 @@ export default function SocialProfilePage() {
             <TabsContent value="experience" className="mt-6">
               <div className="space-y-6">
                 {[
+                 {
+                    role: "Software Engineer",
+                    company: "Upstash",
+                    logo: "/upstash.webp",
+                    period: "jun-2025 - Present",
+                    location: "Remotely - company Based in California",
+                    description:
+                      "Working on serverless backend systems using Redis, vector search, and QStash. I focus on improving scalability, developer experience, and edge-ready API integrations.",
+                  },
                   {
                   role: "CTO & Software Engineer",
                   company: "Danab Power Bank Station",
@@ -170,10 +179,10 @@ export default function SocialProfilePage() {
                     "I work on backend structuring, improving UI scalability, and enhancing the overall performance of Danab servers.",
                   },
                   {
-                  role: "Part-Time Developer",
+                  role: "Former -  Developer",
                   company: "Shape Ads",
                   logo: "/shapeads.webp",
-                  period: "2025 - Present",
+                  period: "mar - 2025 - jun-10th-2025",
                   location: "Mogadishu, Somalia",
                   description:
                     "Building AI automation tools to manage social media ads and CMS - ERP Next solutions for businesses.",
@@ -315,16 +324,16 @@ This project is a simple implementation of the Space Invaders arcade game using 
                 { name: "React", level: "Expert", icon: <Atom className="text-cyan-500 h-5 w-5" />, description: "Expert in building reusable components and managing state effectively." },
                 { name: "Next.js", level: "Advanced", icon: <Layers className="text-gray-800 h-5 w-5" />, description: "Proficient in server-side rendering and building SEO-friendly web apps." },
                 { name: "Node.js", level: "Advanced", icon: <Server className="text-green-500 h-5 w-5" />, description: "Experienced in building scalable backend services and APIs." },
-                { name: "Express", level: "Intermediate", icon: <ServerCrash className="text-gray-500 h-5 w-5" />, description: "Capable of creating RESTful APIs and middleware for web applications." },
+                { name: "Express", level: "Expert", icon: <ServerCrash className="text-gray-500 h-5 w-5" />, description: "Capable of creating RESTful APIs and middleware for web applications." },
                 { name: "MongoDB", level: "Advanced", icon: <Leaf className="text-green-600 h-5 w-5" />, description: "Skilled in designing and managing NoSQL databases for high-performance applications." },
-                { name: "PostgreSQL", level: "Intermediate", icon: <Database className="text-blue-700 h-5 w-5" />, description: "Experienced in relational database design and query optimization." },
-                { name: "GraphQL", level: "Intermediate", icon: <GitGraph className="text-pink-500 h-5 w-5" />, description: "Proficient in building flexible and efficient APIs for modern applications." },
-                { name: "AWS", level: "Intermediate", icon: <Cloud className="text-orange-500 h-5 w-5" />, description: "Experienced in deploying and managing cloud-based applications." },
-                { name: "Docker", level: "Intermediate", icon: <Box className="text-blue-400 h-5 w-5" />, description: "Skilled in containerizing applications for consistent and scalable deployments." },
+                { name: "PostgreSQL", level: "Advanced", icon: <Database className="text-blue-700 h-5 w-5" />, description: "Experienced in relational database design and query optimization." },
+                { name: "GraphQL", level: "Advanced", icon: <GitGraph className="text-pink-500 h-5 w-5" />, description: "Proficient in building flexible and efficient APIs for modern applications." },
+                { name: "AWS", level: "Expert", icon: <Cloud className="text-orange-500 h-5 w-5" />, description: "Experienced in deploying and managing cloud-based applications." },
+                { name: "Docker", level: "Advanced", icon: <Box className="text-blue-400 h-5 w-5" />, description: "Skilled in containerizing applications for consistent and scalable deployments." },
                 { name: "Git", level: "Advanced", icon: <GitBranch className="text-red-500 h-5 w-5" />, description: "Proficient in version control and collaborative development workflows." },
                 { name: "Tailwind CSS", level: "Advanced", icon: <Wind className="text-teal-500 h-5 w-5" />, description: "Expert in creating responsive and modern UI designs efficiently." },
                 { name: "Redux", level: "Advanced", icon: <Repeat className="text-purple-500 h-5 w-5" />, description: "Experienced in managing complex application state effectively." },
-                { name: "Jest", level: "Intermediate", icon: <TestTube className="text-red-400 h-5 w-5" />, description: "Capable of writing unit and integration tests for robust applications." },
+                { name: "Jest", level: "Advanced", icon: <TestTube className="text-red-400 h-5 w-5" />, description: "Capable of writing unit and integration tests for robust applications." },
                 { name: "Figma", level: "Intermediate", icon: <PenTool className="text-pink-400 h-5 w-5" />, description: "Skilled in designing user interfaces and collaborating with design teams." },
               ].map((skill, index) => (
                 <div key={index} className="border rounded-lg p-3 hover:border-primary transition-colors flex items-center gap-3">
