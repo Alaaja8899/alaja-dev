@@ -161,7 +161,7 @@ export default function SocialProfilePage() {
               <div className="space-y-6">
                 {[
                  {
-                    role: "Software Engineer Inter",
+                    role: "Software Engineer Intern",
                     company: "Upstash",
                     logo: "/upstash.webp",
                     period: "jun-2025 - Present",
