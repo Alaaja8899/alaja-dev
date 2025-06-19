@@ -161,16 +161,16 @@ export default function SocialProfilePage() {
               <div className="space-y-6">
                 {[
                  {
-                    role: "Software Engineer",
+                    role: "Software Engineer Inter",
                     company: "Upstash",
                     logo: "/upstash.webp",
                     period: "jun-2025 - Present",
-                    location: "Remotely - company Based in California",
+                    location: "Intern - Remote",
                     description:
                       "Working on serverless backend systems using Redis, vector search, and QStash. I focus on improving scalability, developer experience, and edge-ready API integrations.",
                   },
                   {
-                  role: "CTO & Software Engineer",
+                  role: "Co-Founder & CTO",
                   company: "Danab Power Bank Station",
                   logo: "/danab-1.webp",
                   period: "2024 - Present",
