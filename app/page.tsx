@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -40,8 +41,11 @@ import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react"
 
 export default function SocialProfilePage() {
+    const [showModal, setShowModal] = useState<boolean>(true)
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -62,7 +66,30 @@ export default function SocialProfilePage() {
           </div>
         </div>
       </header>
-
+{/* Modal */}
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"        >
+          <div
+            className="relative max-w-md w-full p-4"
+            onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+          >
+            <Image
+              src="/me.webp"
+              alt="Enlarged Profile"
+              width={500}
+              height={500}
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+            <button
+              className="absolute top-1 right-1 text-white text-2xl font-bold"
+              onClick={()=>setShowModal(false)}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
       <main>
         {/* Profile Header */}
         <div className="relative">
@@ -76,14 +103,17 @@ export default function SocialProfilePage() {
             />
           </div>
           <div className="container relative">
-            <div className="absolute -top-16 left-4 md:left-8 flex items-end">
-              <div className="relative h-32 w-32 rounded-full border-4 border-background overflow-hidden">
+            <div className="absolute -top-16 l(eft-4 md:left-8 flex items-end">
+              <div
+              className="relative h-32 w-32 rounded-full border-4 border-background overflow-hidden">
                 <Image
                   src="/me.webp"
                   alt="Profile"
                   fill
-                  className="object-cover"
+                  className="object-cover cursor-pointer"
                   priority
+              onClick={()=>setShowModal(true)}
+                  
                 />
               </div>
             </div>
