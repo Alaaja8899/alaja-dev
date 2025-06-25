@@ -199,6 +199,15 @@ export default function SocialProfilePage() {
                     description:
                       "Working on serverless backend systems using Redis, vector search, and QStash. I focus on improving scalability, developer experience, and edge-ready API integrations.",
                   },
+                  // {
+                  //   role: "Former  CTO & Software",
+                  //   company: "Danab Power Bank Station",
+                  //   logo: "/danab-1.webp",
+                  //   period: "2024 - jun25-2025",
+                  //   location: "Mogadishu, Somalia",
+                  //   description:
+                  //     "I worked on backend structuring, improving UI scalability, and enhancing the overall performance of Danab servers.",
+                  // },
                   {
                     role: "Former -  Developer",
                     company: "Shape Ads",
@@ -252,15 +261,15 @@ export default function SocialProfilePage() {
             <TabsContent value="projects" className="mt-6">
               <div className="grid md:grid-cols-2 gap-6">
                 {[
-                  {
-                    title: "Danab Power Bank Rental App",
-                    description:
-                      "A web application for renting Danab power bank stations, featuring real-time availability, rental tracking, and secure payment integration.",
-                    tags: ["Next.js", "TailwindCss", "Redux", "ShadCn", "WaafiPay"],
-                    image: "/danab.webp",
-                    date: "Nov 16, 2024",
-                    link: "https://dn-frontend-gamma.vercel.app/"
-                  },
+                  // {
+                  //   title: "Danab Power Bank Rental App",
+                  //   description:
+                  //     "A web application for renting Danab power bank stations, featuring real-time availability, rental tracking, and secure payment integration.",
+                  //   tags: ["Next.js", "TailwindCss", "Redux", "ShadCn", "WaafiPay"],
+                  //   image: "/danab.webp",
+                  //   date: "Nov 16, 2024",
+                  //   link: "https://dn-frontend-gamma.vercel.app/"
+                  // },
                   {
                     title: "AlajArt",
                     description:
