@@ -200,15 +200,6 @@ export default function SocialProfilePage() {
                       "Working on serverless backend systems using Redis, vector search, and QStash. I focus on improving scalability, developer experience, and edge-ready API integrations.",
                   },
                   {
-                    role: "Co-Founder & CTO",
-                    company: "Danab Power Bank Station",
-                    logo: "/danab-1.webp",
-                    period: "2024 - Present",
-                    location: "Mogadishu, Somalia",
-                    description:
-                      "I work on backend structuring, improving UI scalability, and enhancing the overall performance of Danab servers.",
-                  },
-                  {
                     role: "Former -  Developer",
                     company: "Shape Ads",
                     logo: "/shapeads.webp",
